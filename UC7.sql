@@ -74,3 +74,7 @@ update employee_payroll set salary = 300000000.00  where name = 'Kisalay';
 SELECT AVG(salary) FROM  employee_payroll  WHERE name = 'Bill' GROUP BY gender;     #Using AVG function to find average
 
 SELECT COUNT(salary) FROM  employee_payroll  WHERE name = 'Charlie' GROUP BY id;     #Using COUNT function to find total number of occurences of records
+
+SELECT MIN(salary) FROM  employee_payroll  WHERE name = 'Charlie' GROUP BY id;       #Using MIN function to find min salary 
+
+SELECT MAX(salary) FROM  employee_payroll  WHERE name = 'Charlie' GROUP BY id;        #Using MAX function to find min salary 
