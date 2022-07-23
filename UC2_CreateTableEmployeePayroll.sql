@@ -1,3 +1,4 @@
+#########################################################################################
 ## UC2
 
  CREATE TABLE employee_payroll    #create table
@@ -11,3 +12,4 @@
     
 DROP TABLE employee_payroll;                # Drop Table employee_payroll
 DESCRIBE employee_payroll;                  # Describe Table
+########################################################################################
