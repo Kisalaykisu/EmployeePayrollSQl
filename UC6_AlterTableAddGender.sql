@@ -1,3 +1,5 @@
+
+###############################################################################################################################
 ## UC2
 
 SHOW DATABASES;                   #TO see all Databases
@@ -5,7 +7,7 @@ SHOW DATABASES;                   #TO see all Databases
 CREATE DATABASE payroll_service;   #create database
 USE payroll_service;               # To use payroll_service Database
 SELECT DATABASE();                 # To see current database
-
+##############################################################################################################################
 
  CREATE TABLE employee_payroll    #create table
     (
@@ -20,7 +22,7 @@ DROP TABLE employee_payroll;                # Drop Table employee_payroll
 DESCRIBE employee_payroll;                  # Describe Table
 
 
-
+##########################################################################################################################################
 
 
 ## UC3
@@ -31,7 +33,7 @@ DESCRIBE employee_payroll;                  # Describe Table
       ('Charlie',3000000,'2020-05-21');
 
 
-
+######################################################################################################################################################
 
 
 
@@ -41,7 +43,7 @@ DESCRIBE employee_payroll;                  # Describe Table
 SELECT * FROM employee_payroll;           # Retrieve the values from the tables
 
 
-
+######################################################################################################################################
 
 
 #UC5
@@ -54,7 +56,7 @@ SELECT * FROM employee_payroll                                          #Select 
 
 
 
-
+############################################################################################################################################
 
 
 
@@ -62,8 +64,9 @@ SELECT * FROM employee_payroll                                          #Select 
 
 ALTER TABLE employee_payroll ADD gender CHAR(1) AFTER name;       #Adding gender field
 
-
+###############################################################################################################################################
 update employee_payroll set gender='F' where name = 'Bill';
 update employee_payroll set gender='M' where name = 'Kisalay' or name = 'Charlie';
 update employee_payroll set salary = 300000000.00  where name = 'Kisalay';
 
+#################################################################################################################################################
