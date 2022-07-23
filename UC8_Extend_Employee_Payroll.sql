@@ -1,3 +1,4 @@
+#################################################################################################################################################################
 ## UC2
 
 SHOW DATABASES;                   #TO see all Databases
@@ -20,7 +21,7 @@ DROP TABLE employee_payroll;                # Drop Table employee_payroll
 DESCRIBE employee_payroll;                  # Describe Table
 
 
-
+##########################################################################################################################################################################
 
 
 ## UC3
@@ -31,7 +32,7 @@ DESCRIBE employee_payroll;                  # Describe Table
       ('Charlie',3000000,'2020-05-21');
 
 
-
+###################################################################################################################################################################
 
 
 
@@ -41,7 +42,7 @@ DESCRIBE employee_payroll;                  # Describe Table
 SELECT * FROM employee_payroll;           # Retrieve the values from the tables
 
 
-
+#########################################################################################################################################################
 
 
 #UC5
@@ -50,7 +51,7 @@ SELECT salary FROM employee_payroll WHERE name = 'Bill';      #SELECTING Bill en
 
 SELECT * FROM employee_payroll                                          #Select Employee from Date Range
      WHERE start BETWEEN CAST('2018-01-01' AS DATE) AND DATE(NOW());
-
+########################################################################################################################################################
 
 
 
@@ -66,7 +67,7 @@ ALTER TABLE employee_payroll ADD gender CHAR(1) AFTER name;       #Adding gender
 update employee_payroll set gender='F' where name = 'Bill';
 update employee_payroll set gender='M' where name = 'Kisalay' or name = 'Charlie';
 update employee_payroll set salary = 300000000.00  where name = 'Kisalay';
-
+########################################################################################################################################################################
 
 #UC7
 
@@ -80,7 +81,7 @@ SELECT MIN(salary) FROM  employee_payroll  WHERE name = 'Charlie' GROUP BY id;  
 SELECT MAX(salary) FROM  employee_payroll  WHERE name = 'Charlie' GROUP BY id;        #Using MAX function to find min salary 
 
 
-
+########################################################################################################################################################################
 
 
 # UC8 -Extend_Employee_Payroll
@@ -94,3 +95,4 @@ ALTER TABLE employee_payroll ADD department  VARCHAR(150) NOT NULL AFTER address
 ALTER TABLE employee_payroll ADD address SET DEFAULT 'TBD';  # Setting Default Value
 
 INSERT INTO employee_payroll(name,salary,start) VALUES ('Bill',1000000.00,'2010-01-03')
+#######################################################################################################################################################################
