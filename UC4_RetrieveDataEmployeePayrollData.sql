@@ -1,3 +1,4 @@
+########################################################################################################################################
 ## UC2
 
 SHOW DATABASES;                   #TO see all Databases
@@ -5,7 +6,7 @@ SHOW DATABASES;                   #TO see all Databases
 CREATE DATABASE payroll_service;   #create database
 USE payroll_service;               # To use payroll_service Database
 SELECT DATABASE();                 # To see current database
-
+##########################################################################################################################################
 
  CREATE TABLE employee_payroll    #create table
     (
@@ -21,7 +22,7 @@ DESCRIBE employee_payroll;                  # Describe Table
 
 
 
-
+#####################################################################################################################################################
 
 ## UC3
 
@@ -32,7 +33,7 @@ DESCRIBE employee_payroll;                  # Describe Table
 
 
 
-
+#####################################################################################################################################################
 
 
 #UC4
@@ -40,3 +41,4 @@ DESCRIBE employee_payroll;                  # Describe Table
 
 SELECT * FROM employee_payroll;           # Retrieve the values from the tables
 
+#########################################################################################################################################################
