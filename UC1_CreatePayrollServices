@@ -1,3 +1,4 @@
+##########################################################################################################################################################################
 mysql> SHOW DATABASES;                   #TO see all Databases
 +---------------------+
 | Database            |
@@ -12,11 +13,11 @@ mysql> SHOW DATABASES;                   #TO see all Databases
 | world               |
 +---------------------+
 8 rows in set (0.00 sec)
-
+##############################################################################################################################################################################
 mysql> #UC1
 mysql> CREATE DATABASE payroll_service;   #create database
 mysql> USE DATABASE payroll_service;   #create database
-ERROR 1049 (42000): Unknown database 'database'
+##################################################################################################################################################################
 mysql> USE payroll_service;               # To use payroll_service Database
 Database changed
 mysql> SELECT DATABASE();                 # To see current database
@@ -26,3 +27,4 @@ mysql> SELECT DATABASE();                 # To see current database
 | payroll_service |
 +-----------------+
 1 row in set (0.00 sec)
+############################################################################################################################################################################
