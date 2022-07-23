@@ -1,3 +1,4 @@
+#######################################################################################################################################################################
 ## UC2
 
 SHOW DATABASES;                   #TO see all Databases
@@ -5,7 +6,7 @@ SHOW DATABASES;                   #TO see all Databases
 CREATE DATABASE payroll_service;   #create database
 USE payroll_service;               # To use payroll_service Database
 SELECT DATABASE();                 # To see current database
-
+###################################################################################################################
 
  CREATE TABLE employee_payroll    #create table
     (
@@ -20,7 +21,7 @@ DROP TABLE employee_payroll;                # Drop Table employee_payroll
 DESCRIBE employee_payroll;                  # Describe Table
 
 
-
+#############################################################################################################
 
 
 ## UC3
@@ -33,7 +34,7 @@ DESCRIBE employee_payroll;                  # Describe Table
 
 
 
-
+#############################################################################################################
 
 #UC4
 
@@ -42,7 +43,7 @@ SELECT * FROM employee_payroll;           # Retrieve the values from the tables
 
 
 
-
+###################################################################################################################################
 
 #UC5
 
@@ -54,7 +55,7 @@ SELECT * FROM employee_payroll                                          #Select 
 
 
 
-
+##################################################################################################################################################
 
 
 
@@ -67,6 +68,7 @@ update employee_payroll set gender='F' where name = 'Bill';
 update employee_payroll set gender='M' where name = 'Kisalay' or name = 'Charlie';
 update employee_payroll set salary = 300000000.00  where name = 'Kisalay';
 
+####################################################################################################################################
 
 #UC7
 
@@ -80,7 +82,7 @@ SELECT MIN(salary) FROM  employee_payroll  WHERE name = 'Charlie' GROUP BY id;  
 SELECT MAX(salary) FROM  employee_payroll  WHERE name = 'Charlie' GROUP BY id;        #Using MAX function to find min salary 
 
 
-
+##########################################################################################################################
 
 
 # UC8 -Extend_Employee_Payroll
@@ -95,7 +97,7 @@ ALTER TABLE employee_payroll ADD address SET DEFAULT 'TBD';  # Setting Default V
 
 INSERT INTO employee_payroll(name,salary,start) VALUES ('Bill',1000000.00,'2010-01-03')
 
-
+################################################################################################################################
 
 
 ## UC9_AbilityToExtendEmployeePayroll
@@ -112,7 +114,7 @@ ALTER TABLE employee_payroll ADD tax Double NOT NULL AFTER taxable_pay;
 ALTER TABLE employee_payroll ADD net_pay Double NOT NULL AFTER tax;
 
 
-
+###################################################################################################################################
 
 
 # UC10  Ability to make Terissa as part of Sales and Marketing Department
@@ -127,3 +129,4 @@ INSERT INTO employee_payroll
 ALTER TABLE employee_payroll DROP gender;   #Dropping gender field
 
 DROP DATABASE payroll_service;               #Dropping payroll_service DATABASE
+#####################################################################################################################################
