@@ -1,12 +1,12 @@
 ## UC2
-
+##################################################################################################################################################################
 SHOW DATABASES;                   #TO see all Databases
 #UC1
 CREATE DATABASE payroll_service;   #create database
 USE payroll_service;               # To use payroll_service Database
 SELECT DATABASE();                 # To see current database
 
-
+###########################################################################################################################################################################
  CREATE TABLE employee_payroll    #create table
     (
     id  INT unsigned NOT NULL AUTO_INCREMENT,    #Unique ID for the record
@@ -20,7 +20,7 @@ DROP TABLE employee_payroll;                # Drop Table employee_payroll
 DESCRIBE employee_payroll;                  # Describe Table
 
 
-
+######################################################################################################################################################################
 
 
 ## UC3
@@ -31,7 +31,7 @@ DESCRIBE employee_payroll;                  # Describe Table
       ('Charlie',3000000,'2020-05-21');
 
 
-
+#################################################################################################################################################################
 
 
 
@@ -41,7 +41,7 @@ DESCRIBE employee_payroll;                  # Describe Table
 SELECT * FROM employee_payroll;           # Retrieve the values from the tables
 
 
-
+#################################################################################################################################################################
 
 
 #UC5
@@ -52,7 +52,7 @@ SELECT * FROM employee_payroll                                          #Select 
      WHERE start BETWEEN CAST('2018-01-01' AS DATE) AND DATE(NOW());
 
 
-
+#####################################################################################################################################################################
 
 
 
@@ -66,7 +66,7 @@ ALTER TABLE employee_payroll ADD gender CHAR(1) AFTER name;       #Adding gender
 update employee_payroll set gender='F' where name = 'Bill';
 update employee_payroll set gender='M' where name = 'Kisalay' or name = 'Charlie';
 update employee_payroll set salary = 300000000.00  where name = 'Kisalay';
-
+######################################################################################################################################################################
 
 #UC7
 
@@ -78,7 +78,7 @@ SELECT COUNT(salary) FROM  employee_payroll  WHERE name = 'Charlie' GROUP BY id;
 SELECT MIN(salary) FROM  employee_payroll  WHERE name = 'Charlie' GROUP BY id;       #Using MIN function to find min salary 
 
 SELECT MAX(salary) FROM  employee_payroll  WHERE name = 'Charlie' GROUP BY id;        #Using MAX function to find min salary 
-
+###############################################################################################################################################
 
 
 
@@ -95,7 +95,7 @@ ALTER TABLE employee_payroll ADD address SET DEFAULT 'TBD';  # Setting Default V
 
 INSERT INTO employee_payroll(name,salary,start) VALUES ('Bill',1000000.00,'2010-01-03')
 
-
+################################################################################################################################################################
 
 
 ## UC9_AbilityToExtendEmployeePayroll
@@ -110,3 +110,4 @@ ALTER TABLE employee_payroll ADD taxable_pay Double NOT NULL AFTER  deductions;
 ALTER TABLE employee_payroll ADD tax Double NOT NULL AFTER taxable_pay;
 
 ALTER TABLE employee_payroll ADD net_pay Double NOT NULL AFTER tax;
+###############################################################################################################################################################
