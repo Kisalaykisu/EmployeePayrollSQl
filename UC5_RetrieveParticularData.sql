@@ -1,3 +1,4 @@
+##############################################################################################################################
 ## UC2
 
 SHOW DATABASES;                   #TO see all Databases
@@ -15,14 +16,14 @@ SELECT DATABASE();                 # To see current database
     start  DATE NOT NULL,                        #Employee start date
     PRIMARY KEY (id)                             # Make id primary key
     );
-    
+#####################################################################################################################################    
 DROP TABLE employee_payroll;                # Drop Table employee_payroll
 DESCRIBE employee_payroll;                  # Describe Table
 
 
 
 
-
+####################################################################################################################################
 ## UC3
 
  INSERT INTO employee_payroll ( name,salary, start) VALUES     // Inserting the values in the table
@@ -33,7 +34,7 @@ DESCRIBE employee_payroll;                  # Describe Table
 
 
 
-
+##########################################################################################################################
 
 #UC4
 
@@ -42,7 +43,7 @@ SELECT * FROM employee_payroll;           # Retrieve the values from the tables
 
 
 
-
+########################################################################################################################
 
 #UC5
 
@@ -50,3 +51,4 @@ SELECT salary FROM employee_payroll WHERE name = 'Bill';      #SELECTING Bill en
 
 SELECT * FROM employee_payroll                                          #Select Employee from Date Range
      WHERE start BETWEEN CAST('2018-01-01' AS DATE) AND DATE(NOW());
+#################################################################################################################################################
