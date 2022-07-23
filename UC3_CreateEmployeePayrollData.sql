@@ -1,3 +1,4 @@
+#####################################################################################################################################################
 ## UC2
 
 SHOW DATABASES;                   #TO see all Databases
@@ -6,7 +7,7 @@ CREATE DATABASE payroll_service;   #create database
 USE payroll_service;               # To use payroll_service Database
 SELECT DATABASE();                 # To see current database
 
-
+#####################################################################################################################################################
  CREATE TABLE employee_payroll    #create table
     (
     id  INT unsigned NOT NULL AUTO_INCREMENT,    #Unique ID for the record
@@ -21,7 +22,7 @@ DESCRIBE employee_payroll;                  # Describe Table
 
 
 
-
+########################################################################################################################################################
 
 ## UC3
 
@@ -30,4 +31,5 @@ DESCRIBE employee_payroll;                  # Describe Table
       ('Kisalay',2000000,'2019-11-13'),
       ('Charlie',3000000,'2020-05-21');
 
+##############################################################################################################################################################
    
